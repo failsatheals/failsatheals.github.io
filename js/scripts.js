@@ -15,7 +15,7 @@ function toggleLogo(color){
 
     var logo = document.getElementById("logo");
 
-    if(color == 'red'){
+    if(color == 'blue'){
         logo.src = "images/website/logo_blue.png";
     } else {
         logo.src = "images/website/logo.png";
