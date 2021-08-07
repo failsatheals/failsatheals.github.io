@@ -20,7 +20,7 @@
 <body class="home">
     <div id="headerContent"></div>
     <div id="home" class="header">
-        <div id="gif" class="gif" style="background-image: url(&quot;images/website/giphy.gif&quot;);">
+        <div id="gif" class="gif" style="background-image: url('images/website/giphy.gif');">
             <!-- <img class=" overlay " src="images/website/clear.gif "> -->
         </div>
         <div class="profile">
@@ -621,7 +621,7 @@
 
             function static() {
                 clearInterval(interval);
-                $('#gif').css('background-image', 'url(' + 'images/giphy.gif' + ')');
+                $('#gif').css('background-image', 'url(' + 'images/website/giphy.gif' + ')');
                 interval = setInterval(slideshow, 3000);
             };
 
