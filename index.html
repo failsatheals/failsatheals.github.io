@@ -65,7 +65,7 @@
             
 
             <div style="text-align: center">
-                <a href="content/Resume.pdf" class="btn btn-lg" title="View Resume">
+                <a href="content/me/Resume.pdf" class="btn btn-lg" title="View Resume">
                     <i class="zmdi zmdi-file"></i> View Resume
                 </a>
             </div>
@@ -607,8 +607,6 @@
             function slideshow() {
                 clearInterval(interval);
                 $.support.cors = true;
-                console.log('slideshow');
-
 
                 fetch("//api.giphy.com/v1/gifs/random?api_key=CW27AW0nlp5u0&username=carlburton").then(res => res.json())
                 .then(response => 
