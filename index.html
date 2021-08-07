@@ -1,1 +1,739 @@
-Hellow World
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="css/colbenaldrich.css">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/simplegrid.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script> 
+        $(function () {
+            $("#headerContent").load("header.html");
+            $("#footerContent").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body class="home">
+    <div id="headerContent"></div>
+    <div id="home" class="header">
+        <div id="gif" class="gif" style="background-image: url(&quot;images/giphy.gif&quot;);">
+            <!-- <img class=" overlay " src="images/clear.gif "> -->
+        </div>
+        <div class="profile">
+            <img class="circular" src="images/me.png" alt="Profile image" />
+            <h1>Colben Aldrich</h1>
+            <span class="subheading">Software Engineer</span>
+        </div>
+        <div class="down-arrow" onclick="$(window).scrollTo($('#introduction'), 400, {offset: -50});toggleMenu();">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="43px"
+                height="33px" viewBox="0 0 43 33" enable-background="new 0 0 43 33" xml:space="preserve">
+                <g>
+                    <path fill="#FFFFFF" d="M0.093,1.294c0,3.176,0,7.686,0,8.77l21.408,21.502l21.406-21.502c0-0.836,0-6.08,0-8.77L21.501,22.796   L0.093,1.294z"></path>
+                </g>
+            </svg>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="introduction" class="grid grid-pad">
+        <div class="col-1-1">
+            <h2 class="heading">About Me</h2>
+            <p>
+               Full stack web developer who is results driven and excited by creating technological solutions. 
+		Helping refine business requirements to identify any underlying problems and keep focus on development goals. 
+		With my development background I am able to better understand data flows and technical challenges to create implementation 
+		strategies. Within development I find enjoyment out of creating positive user experiences for customers and developing out 
+		of the box solutions to aid them. My past experiences have ranged from command line server application to single page web 
+		applications. Regardless of language or environment I enjoy creating the most appropriate solution for the problem at hand.
+		</p>
+			<p>
+			Outside of professional development I love researching solutions to problems in my day to day life. 
+		This website will show off some of the virtual and non virtual projects I have been working on. 
+		On the virtual side I have enjoyed creating AutoHotKey scripts for games and programs to help me create prototypes for my 
+		board game. In the real world I enjoy working on automobiles and projects on my house. Overall I like to keep myself busy 
+		and am always finding something to tinker with.
+			</p>  
+
+            
+
+            <div style="text-align: center">
+                <a href="content/Resume.pdf" class="btn btn-lg" title="View Resume">
+                    <i class="zmdi zmdi-file"></i> View Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-background">
+        <div id="current" class="grid grid-pad">
+
+            <div class="col-1-1">
+                <h2 class="heading">Current Projects</h2>
+            </div>
+
+            <div class="col-1-3">
+                <h3>Unnamed Board Game</h3>
+                <a id="boardModal" href="#board" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/game/board2.png" alt="board" />
+                    </div>
+                </a>
+            </div>
+
+            
+			<div class="col-1-3">
+                <h3>PDF Card Generator</h3>
+                <a id="pdfCardModal" href="#pdf" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/game/cardpdf.png" alt="board" />
+                    </div>
+                </a>
+            </div>
+			
+			
+			<div class="col-1-3">
+                <h3>Card Populator</h3>
+                <a id="cardPopModal" href="#cardPop" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/game/texttocardUI.png" alt="board" />
+                    </div>
+                </a>
+            </div>
+			
+			<div class="col-1-3">
+                <h3>Jeep Grand Cherokee</h3>
+                <a id="jeepModal" href="#jeep" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/jeep/jeep.png" alt="board" />
+                    </div>
+                </a>
+            </div>
+			
+			<div class="col-1-3">
+                <h3>Pine Pellet Sifter</h3>
+                <a id="sifterModal" href="#sifter" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/sifter/sifter1.jpg" alt="board" />
+                    </div>
+                </a>
+            </div>
+			
+			
+			<div class="col-1-1">
+                <h2 class="heading">Previous Projects</h2>
+            </div>
+			<!-- <div class="col-1-3"> -->
+                <!-- <h3>Shock MVC app</h3> -->
+                <!-- <a id="fxModal" href="#fx" class="modal-link"> -->
+                    <!-- <div class="overlay-container"> -->
+                        <!-- <div class="overlay"> -->
+                            <!-- <i class="zmdi zmdi-zoom-in"></i> -->
+                        <!-- </div> -->
+                        <!-- <img src="images/fx.jpg" alt="board" /> -->
+                    <!-- </div> -->
+                <!-- </a> -->
+            <!-- </div> -->
+			
+            <div class="col-1-3">
+                <h3>IOU RPG Script</h3>
+                <a id="iouModal" href="#iou" class="modal-link">
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <i class="zmdi zmdi-zoom-in"></i>
+                        </div>
+                        <img src="images/idleuniverse.png" alt="board" style="image-orientation: from-image" />
+                    </div>
+                </a>
+            </div>
+			
+			
+		</div>
+		
+		
+		
+    </div>
+    <div id="footerContent"></div>
+
+
+
+
+    <!-- Modals -->
+    <div id="board" class="modal-container">
+        <div class="modal-background close-board modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-board modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">Board Game</h3>
+                <img src="images/game/board2.png" alt="board" />
+                <p>This board game has been an ongoing project with a close friend in the last few years. We are adapting a
+                    card based play style with initiative based combat and party building mechanics. The game is still in
+                    paper prototype phase but as our skills develop we are progressing toward digital methods to play test
+                    and present out product.</p>
+
+                <p> A small glimpse of the art work and design can be seen
+                    <a target="_blank" rel="noopener noreferrer" id="imagesModal" href="#images" class="modal-link">
+                        <b>
+                            <u>
+                                <i>here</i>
+                            </u>
+                        </b>
+                    </a> and a alpha digital prototype created in a 2D game engine can be seen
+                    <a target="_blank" rel="noopener noreferrer" id="gameModal" href="#game" class="modal-link">
+                        <b>
+                            <u>
+                                <i>here</i>
+                            </u>
+                        </b>
+                    </a>
+                    </a>
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <<!-- div id="fx" class="modal-container">
+        <div class="modal-background close-fx modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-fx modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">FX Suspension</h3>
+                <img src="images/fx.jpg" alt="fx" />
+                <p>This is an ongoing MVC web app that would allow customers to create orders through a browser and the owner
+                    to track and manage the orders easily.</p>
+
+                <p> Many key features include; gallary, image upload handling, newsletter interface, ordering system and managing
+                    users.
+                </p>
+
+
+
+            </div>
+        </div>
+    </div> -->
+
+    <div id="images" class="modal-container">
+        <div class="modal-background close-images modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-images modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">Images</h3>
+                <p>Proto-type backings at 100dpi</p>
+                <img src="images/game/bg0.png" alt="images" />
+
+                <p>Proto-type backings at 600dpi</p>
+                <img src="images/game/bg1.png" alt="images" />
+
+                <p>Proto-type characters at 100dpi</p>
+                <img src="images/game/bg3.png" alt="images" />
+
+                <p>Proto-type weapons at 100dpi</p>
+                <img src="images/game/bg2.png" alt="images" />
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="game" class="modal-container">
+        <div class="modal-background close-game modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-game modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">Screenshots</h3>
+
+                <p>Number of player selection screen</p>
+                <img src="images/game/game1.png" alt="images" />
+
+                <p>Choice of all classes</p>
+                <img src="images/game/game2.png" alt="images" />
+
+                <p>Selection process</p>
+                <img src="images/game/game3.png" alt="images" />
+
+                <p>Weapon selection</p>
+                <img src="images/game/game4.png" alt="images" />
+
+                <p>Weapon selection cont.</p>
+                <img src="images/game/game5.png" alt="images" />
+
+                <p>Main menu system - inventory</p>
+                <img src="images/game/game6.png" alt="images" />
+
+                <p>Main menu system - intventory cont.</p>
+                <img src="images/game/game7.png" alt="images" />
+
+            </div>
+        </div>
+    </div>
+    <div id="iou" class="modal-container">
+        <div class="modal-background close-iou modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-iou modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">IOU RPG Script</h3>
+              <p>I created various files using Java, Excel and AutoHotKey to create scripts to do tasks within the game. To
+                    to accomplish this I used AutoHotKey to find pixel positions/colors of all points of interactions within
+                    the game. After storing these all into an excel file I wrote a Java script to parse the file and depending
+                    on the presence of a pixel color, write to a file containing AutoHotKey functions. With the resulting
+                    files I could easily copy comma\\nds in desired order to a new AutoHotKey script to build complex actions.</p>
+
+                <p>For me specifically this allowed me to play 6 accounts at once and with binded keystrokes execute diverse
+                    tasks across all accounts. Using functionally of AutoHotKey I was able to write conditions to track windows
+                    open and start an early state identification within the game itself.</p>
+
+                <p>IdleFunctionsIndividual.ahk contains individual lines for each function. Using this in combination with one
+                    another will build complex tasks to be performed by AutoHotKey.</p>
+
+                <p>IdleFunctions_Java.ahk contains the actual functions, these functions need to be present in your FINAL .ahk
+                    file to be ran. The commands from the previous file can be copied within this file for specific bindings
+                    to create your own custom scripts.</p>
+
+                <p>IdleFunctions.ahk is a file I have started to construct and test various tasks. Online 2957 you will notice
+                    a command HoldEnter, this takes a number of times 'enter' will be held pressed as input. This can be
+                    used for Mining and Woodcutting with ease. Line 2972 is what I personally used to switch between my different
+                    browsers/windows. This configuration is designed with 1080 resolution, first 10 windows being the game,
+                    and one unopened quick launch preceding.</p>
+
+                <p>The input parameters x and y are the pixel coordinates of the top left corner of the game in your browser at
+                    100% zoom.</p>
+                <p>Speed will determine the time between each click, this can be easily adjusted for your lag and ping.
+                    <p>Pixel will be defined by the line of code above the command, this will be predetermined from the excel
+                        file. The function will check the color for position passed in and compared to what it should be.</p>
+                    <p>Functions with the menu parameter are my work in progress; these accept a "true" assuming the menu is
+                        present and checks if there is or isn't based on various pixel locations unique to it.</p>
+                    <p>My current main task is on line 2747, here you can see my declare my speed, x, y and set my CoordMode.
+                        It currently loops through each window and uses GAME_CHECK to see if the menu is on menu selection
+                        or wave change, then changes to menu selection. </p>
+                    <p>Please be aware to add esc::ExitApp to the end of your script. </p>
+
+
+
+
+                    <a target="_blank" rel="noopener noreferrer" href="content/IdleFunctionsIndividual.txt" class="btn btn-lg" title="View File">IdleFunctionsIndivual.Ahk</a>
+                    <a target="_blank" rel="noopener noreferrer" href="content/IdleFunctions_Java.txt" class="btn btn-lg" title="View File">IdleFunctions_Java.Ahk</a>
+                    <a target="_blank" rel="noopener noreferrer" href="content/IdleFunctions.txt" class="btn btn-lg" title="View File">IdleFunctions.Ahk</a>
+
+            </div>
+        </div>
+    </div>
+	
+	<div id="pdf" class="modal-container">
+        <div class="modal-background close-pdf modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-pdf modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">PDF Card Generator</h3>
+				
+				<img src="images/game/cardpdfpreview2.png" alt="images" height="506" width="858"/>
+               <p>I started development on this application to easily allow the user to pick a file location and select images within to quickly and easily generate PDFs that can be cut for dual sided card development. The top extension search bar will allow the user to search for specific file types. </p>
+                <p>The top three search bars will allow you to search each respective side and also search for keywords that would be contained in both, such as 'monster' or 'gold'.</p>
+				<p>In the main imageview sections the images can be paired and added to a deck list via the "Add to list" button. Front side images can then be selected to go to a 'Used' group to decrease the search size in the front main group. Current state only allows for Poker sized cards, 63mmx88mm. </p>
+				<p>The buttons below the deck information will allow the user to clear the deck, remove cards, or update the quantity of a card selected. </p>
+				<p>When a constructed deck is ready to be generated, the options at the bottom allow the user to tailor the need to their finished style. Bleed will be the distance in mm from the edge of the image to another. </p>
+				<p>A destination folder and file name can be picked, or desktop and current time as file name as default. The check button will automatically launch the PDF in your current default application for quick preview. </p>
+				<p>Most of the development has been designed to my specific needs and a lot of outside conditions that I have not written code to catch have not been addressed. Any thoughts or ideas are welcome to submission on the projects Github  <a target="_blank" rel="noopener noreferrer" href="https://github.com/failsatheals/PlayingCardPDFGenerator" class="btn btn-xs" title="View File">PlayingCardPDFGenerator</a> </p>
+				<a target="_blank" rel="noopener noreferrer" href="images/game/cardpdf.png" class="btn btn-sm" title="View File">GUI Preview </a>
+				<br>
+                <a target="_blank" rel="noopener noreferrer" href="content/OrderedDeck0.pdf" class="btn btn-sm" title="View File">Generated Armor Deck Example - Very Large File!</a>
+                <a target="_blank" rel="noopener noreferrer" href="content/OrderedDeck1.pdf" class="btn btn-sm" title="View File">Generated Character Deck Example</a>
+				
+			</div>
+        </div>
+    </div>
+	
+	<div id="cardPop" class="modal-container">
+        <div class="modal-background close-cardPop modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-cardPop modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">Card Populator</h3>
+				<img src="images/game/texttocardUI.png" alt="images" height="506" width="858" style="image-orientation: from-image"/>
+				<p>After finishing my PDF Card Generator I realized I still had an issue with populiating the Cards with appropriate text and images in their required locations. I decided it would be faster for me to write this program than to edit image files every time I wanted to make a change.</p>
+				<p>This program requires some basic inputs such as, the Template of the card, a CSV containing the text to place, and any images to place. Currently all the coordinates and parameters for each type are apart of its class within the project, future iterations I would like it to be able to be inputted and dynamic to be used outside my game development.</p>
+				<p>The application will be able to check and determine if the text size will fit and adjust to fit within constraints. It will also handle new lines if lines of text handle different lengths. </p>
+				<p> Overall this application has been an amazing time saver to help me recreate cards and fix all my typos on my first prototype run! </p>
+				</hr>
+				<p>Armor Template</p>
+                <img src="images/game/armor0.png" alt="images" />
+				<br>
+				<hr>
+				<p>CSV Files</p>
+                <a target="_blank" rel="noopener noreferrer" href="content/Armor.csv" class="btn btn-sm" title="View File">Armor CSV</a>
+				<br>
+                <a target="_blank" rel="noopener noreferrer" href="content/Items.csv" class="btn btn-sm" title="View File">Items CSV</a>
+				<br>
+				<hr>
+				<br>
+				
+				<p>Finished Cards</p>
+                <img src="images/game/armor1.png" alt="images" />
+                <img src="images/game/armor2.png" alt="images" />
+                <img src="images/game/encounter1.png" alt="images" />
+                <img src="images/game/equip1.png" alt="images" />
+                <img src="images/game/monster1.png" alt="images" />
+                <img src="images/game/weapon1.png" alt="images" />
+				
+				
+				
+			</div>
+        </div>
+    </div>
+	
+	<div id="jeep" class="modal-container">
+        <div class="modal-background close-jeep modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-jeep modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">1998 Jeep Grand Cherokee</h3>
+				<img src="images/jeep/Jeep_Exterior_2.jpg" alt="images" height="550" width="858"/>
+				<p> This is my 1998 Jeep Grand Cherokee 5.9L, "Niner".</p>
+				<p> </p>
+				
+				
+				<h1>Engine </h1>
+				<p> HPT214XP, 108 LSA,  .488/.480</p>
+                <p>Mopar M1</p>
+                <p>52MM throttle body</p>
+                <p>EQ heads</p>
+                <p>Denso 12 hole injectors 9470229</p> 
+                <p>Harland Sharp 1.7 rockers</p>
+                <p>Trend pushrods</p>
+                <p>Doug Thorley Tri-Y headers</p> 
+                <p>Clothes Street Billet timing chain 93503X9 </p>
+                <p>Scat SCA9012 balancer</p>
+                <p>MSD coil</p>
+                <p>Thunderbolt 8.8 spark plug wires</p>
+                <p>Catch Can with Morimoto large capacity tank</p>
+                <p>K&N intake tube and filter</p>
+                <br>
+                <br>
+				<h1>Rear Axle</h1>
+                <p>Ford Explorer 8.8</p>
+                <p>Ford Racing carbon fiber clutches and s-spring</p>
+                <br>
+                <br>
+                <h1>Front Axle</h1>
+                <p>Rebuild Dana 35</p>
+                <p>Early XJ knuckles</p>
+                <br>
+                <br>
+                <h1>Brakes</h1>
+                <p>WK2 Brake caliper</p>
+                <p>2000 SVT Cobra R 13’’ rotor</p>
+                <p>Raybestos rotors and Element3 pads</p>
+                <p>Crown performance front braided brake lines</p>
+                <p>SSTubes stainless brake line kit</p>
+                <br>
+                Front brake swap guide <a target="_blank"   href="http://jeepm62superchargerkit.blogspot.com/p/blog-page.html" class="modal-link"></a>
+                <br>
+                <br>
+                <h1>Transmission</h1>
+                <p>Martin Saine Street/Strip 700</p>
+                <p>Martin Saine 28s 2800 stall converter</p>
+                <p>Auxiliery fluid cooler post radiator</p>
+                <br>
+                <br>
+                <h1>Misc</h1>
+                <p>Power steering cooler</p>
+                <p>Ironman 4x4 Fab steering brace</p> 
+                <p>Durango steering box</p>
+                <p>AEM inline wideband and controller</p>
+                <p>Seude headliner, soundbar and sun visors </p>
+                <p>Mini D2S 5.0 projector retrofit35w 5k retrofit </p>
+                <p>Morimoto 35w 5k HID bulbs</p>
+                <p>Exterior LED bulbs, front turnsignal switchback with EP39 flasher relay</p>
+                <p>LED fog light pod</p>
+                <p>Carbon fiber hydro dipped interior and exterior pieces</p>
+                <p>WK2 blackedout WK2 badges</p>
+                <p>Modified WJ cabin filter housing and filter</p>
+                <br>
+                <br>
+                <h1>Electronics</h1>
+                <p>Blue Sea fuse panel</p>
+                <p>Joying 6.2’’ Android head unit</p>
+                <p>Weivision 360 camera</p> 
+                <p>GlowShift dual temp gauges</p> 
+                <p>Coolgear 60W type C  15W type A charger</p> 
+                <p>Voltmeter</p>
+                <p>Dakota Digital 2800bt electric fan controller</p>
+                <p>USB Android internal TPMS</p>
+                <br>
+                <br>
+                <h1>Audio</h1>
+                <p>JL xd700/5 amplifier</p>
+                <p>Alpine Type-R 6.5 Component front speakers</p>Front - 
+                <p>Alpine Type-R 6.5 Coaxial rear speakers</p>Back - 
+                <p>Alpine Type-R 10 DVC 4ohm subwoofer</p>Subwoofer - 
+                <p>Q logic subwoofer enclousure</p>Subwoofer Enclosure - 
+                <p>Audio Controller LC7i lineout converter</p>Lineout Converter - 
+                <br>
+                <br>
+                <h1>Exhaust</h1>
+                <p>3 inch from headers back</p>
+                <p>Magnaflow high flow catalytic converter</p>
+                <p>Spintech 5000 Sport Truck muffler</p>
+                <p>5 inch exhaust tip</p>
+                <br>
+                <br>
+                <h1>Suspension</h1>
+                <p>H&R Loweing Springs</p>
+                <p>Bilstein 4600 shock absorbers</p>
+                <p>No front sway bar</p>
+                <p>Hellwig rear sway bar</p>
+                <p>Stock control arms with Prothane bushings</p>
+                <br>
+                <br>
+                <h1>Wheels and Tires</h1>
+                <p>American Mustang FR500 replicas</p>
+                <p>255/55/R18 Cooper Discoverer H/T Plus</p>
+               
+				
+				
+			</div>
+        </div>
+    </div>
+	
+	<div id="sifter" class="modal-container">
+        <div class="modal-background close-sifter modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-sifter modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+				<h3 class="heading-modal">Pine Pellet Sifter</h3>
+				<img src="images/sifter/sifter2.jpg" alt="images" height="506" width="858"/>
+				<p>
+				This project stemmed from the dislike of using traditional clay based cat litter; the dust after after cleaning, refined powder on the ground over time and 
+				the volume of waste it produced. Researching led me to find pine pellets which alleviated the dislikes of clay litter. There is little to no tracking from the box, 
+				no dust is stirred up in the air, and the used litter is easier to dispose of. 
+				</p>
+				<p>
+				After initial use I discovered that the method of sifting used for other traditional litters would not work effectively for pine pellets. In a traditional sense the 
+				material traveling through the sifter would be retained, with pine pellets that material becomes disposed. This is due yo the pine pellets breaking down into fines 
+				when they come into contact with a liquid. Finding an efficient method to remove the fines is the goal to help promote the use of pine pellet litters.
+				</p>
+				<p>
+				In my first attempt I sought out two storage containers that would leave volume between them when stacked. This volume would allow room for the fines to collect while 
+				sifting. To create holes for the sifting container I used a drill bit with a smaller diameter than the pellets and attempted to put holes as close together as possible.
+				I was unable to create as tight of a pattern as I would like due to the plastic fracturing. I created a cut out on the side in hopes the cats would use the whole set up
+				as a litter box but they were not fond of getting inside of it. One concern to be addressed is how much weight can the sifting container hold with more holes. 
+				</p>
+				<p>
+				For my second attempt I wanted to address if I could create a more efficient sifting pattern. One of the findings from my first attempt was that many fines would sit between 
+				holes and with side to side shaking pile up on the edges. For this I decided to put holes on the side going up about an inch. To create a tighter hole pattern I decided to 
+				make a template with a thin piece of metal that I could then use a soldering iron to puncture holes without fracturing. 
+				</p>
+				<p>
+				I am still in the process of creating all the holes, this turned out to be a much longer process than I anticipated. The melting plastic is not desirable and very hard to work around. 
+				If i can prove a tighter pattern to be significantly better I will search out methods of CNC cutting to focus on structural strength.
+				</p>
+				
+				<p>Containers</p>
+                <img src="images/sifter/container1.jpg" alt="images" />
+                <img src="images/sifter/container2.jpg" alt="images" />
+                <img src="images/sifter/lid1.png" alt="images" />
+				
+				<p>Templpate</p>
+				<img src="images/sifter/template1.png" alt="images" />
+				<img src="images/sifter/template2.png" alt="images" />
+				
+				<p>Setup</p>
+				<img src="images/sifter/setup1.jpg" alt="images" />
+				<img src="images/sifter/test1.png" alt="images" />
+				
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
+
+<footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/scale.fix.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+
+    <script type="text/javascript">
+        // Used to make sure that if the user is on mobile,
+        // they will have a fallback image instead of video
+        $(document).ready(function () {
+            var interval;
+            var gifUrl;
+
+            function slideshow() {
+                clearInterval(interval);
+                $.support.cors = true;
+                console.log('slideshow');
+
+
+                fetch("//api.giphy.com/v1/gifs/random?api_key=CW27AW0nlp5u0&username=carlburton").then(res => res.json())
+                .then(response => 
+                {
+                    $('#gif').css('background-image', 'url(' + response.data.image_original_url + ')')
+                    interval = setInterval(static, 7000);
+                    }  ) 
+                    
+                .catch(err =>  console.log(err));
+               
+            };
+
+            function static() {
+                clearInterval(interval);
+                $('#gif').css('background-image', 'url(' + 'images/giphy.gif' + ')');
+                interval = setInterval(slideshow, 3000);
+            };
+
+
+            interval = setInterval(static, 7000);
+
+            slideshow();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).on("scroll", throttle(onScroll, 50));
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Pause video when closing video modals
+        $('.close-spinnulator, .close-breach').click(function (e) {
+            callPlayer("stopVideo");
+        });
+    </script>
+
+    <script>
+        var col = "#FFF";
+        //col = "#F33446";
+
+        $("#boardModal").animatedModal({
+            modalTarget: 'board',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+
+        $("#fxModal").animatedModal({
+            modalTarget: 'fx',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+
+        $("#imagesModal").animatedModal({
+            modalTarget: 'images',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+        $("#gameModal").animatedModal({
+            modalTarget: 'game',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+        $("#iouModal").animatedModal({
+            modalTarget: 'iou',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+		$("#pdfCardModal").animatedModal({
+            modalTarget: 'pdf',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+		$("#cardPopModal").animatedModal({
+            modalTarget: 'cardPop',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+		$("#jeepModal").animatedModal({
+            modalTarget: 'jeep',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+		$("#sifterModal").animatedModal({
+            modalTarget: 'sifter',
+            color: col,
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            animationDuration: "0.4s"
+        });
+
+
+
+    </script>
+</footer>
