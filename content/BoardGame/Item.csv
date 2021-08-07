@@ -1,0 +1,38 @@
+Name,Type,Unique,Buy,Sell,Description,Benefit,BackName
+Seal of the Universe,Trinket,,4,2,Missle Attcks seem to distort as they pass by you. ,1 Ranged Bashing Defense,Item
+Ancient Engraved Ring,Trinket,,4,2,The signets engraved in the ring increase your connection to the universe. ,1 Melee Bashing,Item
+Pearl Necklace,Trinket,1,6,3,"A once precious momento of the Queen of Death, received from a mighty Necromancer. Wearer feels an ancient connection unknown to this world. ",6 Mana,Item
+Ring of Alignment,Trinket,,4,2,You feel the universe align while the ring is worn.,1 Ranged Bashing,Item
+Deployable Decoy,Trinket,,4,2,This mechanically engineered cat disrupts enemies attacks.,1 Melee Bashing Defense,Item
+Vial of Blood,Trinket,1,6,3,"Some claim it contains the blood of Gourst himself, while in your posession you feel connected.",10 HP,Item
+Scaled Gloves,Trinket,1,6,3,Gloves thought to be made from the scales of Drvonn-llypt. While wearing your surroundings slow.,Lower 2 Combat Initiative,Item
+Ahnk,Trinket,1,6,3,While a player posses this ancient tome it gives the player the ability to reincarnate to half base health.,,Item
+Golden Hourglass,Trinket,,4,2,You feel as if everyone around you has slowned down.,Lower 1 Combat Initiative,Item
+Ethereal Bandage,Tirinket,,4,2,It feels as if the world is absorbing your pain.,Bleed Immune,Item
+Tome of Death,Trinket,,4,2,A book that seems to be as old as the universe filled with a language known by no one.,6 Mana,Item
+Shrunken Orc Head,Trinket,,4,2,The aftermath from the Death Queen's greatest loss.,5 HP,Item
+Blessed Leaches,Trinket,,4,2,"Unsure how it's been done, these leeches have been witched to extract poison.",Poison Immune,Item
+Fire,Imbune,,5,2,When applied to a weapon its attack burn the target for 1D6 fire.,1D6 Fire,Item
+Ice,Imbune,,5,2,When applied to a weapon its attack chill the target. Raising targets Defense and Combat Iniative for a full round,Raises Combat and Defense Initiative,Item
+Death,Imbune,,5,2,When applied to a weapon its attack steals part of the targets soul. Deals 1D4 damage and heals 1D4,1D4 Death and 1D4 Heal,Item
+Holy,Imbune,,5,2,When applied to a weapon its attack cleanses the target of evil providing 3 Bashing,3 Bashing,Item
+Nature,Imbune,,5,2,When applied to a weapon its attack poison the target infecting for 1D6 poison.,1D6 Poison,Item
+Mana Potion,Consumable,,2,1,Use at any point in your turn. Can not replenish over plays's max mana.,1D6 Mana,Item
+Massive Mana Potion,Consumeable,,4,2,Use at any point in your turn. Can not replenish over plays's max mana.,2D6 Mana,Item
+Health Potion,Consumable,,2,1,Use at any point in your turn. Can not replenish over plays's max mana.,1D10 Health,Item
+Massive Health Potion,Consumeable,,4,2,Use at any point in your turn. Can not replenish over plays's max mana.,2D10 Health,Item
+Ethereal Sharpening Stone,Material,1,5,2,Used as an additional crafting material when crafting a weapon. Weapon receives 1 Bashing,1 Bashing,Item
+Ethereal Ore,Material,1,5,2,Used as an additional crafting material when crafting armor. Armor receives 10 HP,10 HP,Item
+Ethereal Thread,Material,1,5,2,Used as an additional crafting material when crafting armor. Armor receives 6 Mana,6 Mana,Item
+Bronze Bar,Material,,2,1,4 Bronze: Bronze Armor ,,Item
+Cloth,Material,,2,1,4 Cloth: Imbuned Robe,,Item
+Ore,Material,,2,1,2 Ore: Arrows; 3 Copper: 1H Weapon; 4 Copper: Bow; 6 Copper: 2H Weapons,,Item
+Leather,Material,,2,1,4 Leather: Rugged Vest,,Item
+Replinishment of Light,Holy,,3,1,0: 1D4 Heal 2 Mana I:1D6+1 Heal or 1D4 Damage 6 Mana III: 2D6+2 Heal or 2D4 Damage 10 Mana,,Item
+Judgement of Vengence,Holy,,3,1,0: 1D4 damage 2 Mana I: 1D6+1 Damage or 1D4 Heal 6 Mana III: 2D6+2 Damage or 2D4 Heal 10 Mana,,Item
+Earthly Revival,Nature,,3,1,0:  1D4 Heal 2 Mana I: 1D4 Heal and 1D4 Heal Counters 6 Mana III: 1D6 Heal and 1D6 heal counter 10 Mana,,Item
+Shatter Ground,Nature,,3,1,0: 1D4 Damage  2 Mana I: 1D4 Damage and 1D4 Damage Next 6 Mana III: 1D6 Damage and 1D6 Next 10 Mana,,Item
+Plague of Agony,Death,,3,1,0: 2D4 Damage 2 Mana I: 2D6 Damage 6 Mana III: 3D6 Damage 10 Mana,,Item
+Soul Absorption,Death,,3,1,0: 1D4 Damage 2 Mana I: 1D6 Damage 1D4 Heal Self 6 Mana III:  2D6 Damage 2D4 Heal Self 10 Mana,,Item
+Frost Spike,Ice,,3,1,0: 1D4 Damage  2 Mana I: 1D6 Damage +1 Initiative 6 Mana III: 2D8 Damage +2 Initiative 10 Mana,,Item
+Magma Burn,Fire,,3,1,0: 1D4 Damage 2 Mana I: 1D4 Damage and 1D4 Burn 6 Mana III: 1D12 Damage and 1D6 burn 10 Mana,,Item

@@ -1,0 +1,14 @@
+Name,Type,Description,Benefit,BackName
+Pile of Gold,,Worth 3 gold.,,Gold
+Stack of Gold,,Worth 2 gold.,,Gold
+Gold Pieces,,Worth 1 gold.,,Gold
+Old Boot,,"Worth nothing, but must be given to the merchant upon visiting and placed at the bottom of the deck.",,Gold
+Chest in the Headlights,,"A magical chest walks infront of your party, lifts its lid and beckons you all over. Based off party size. 2: 2 materials; 3: 2 Materials, 1 Item; 4: 3 Materials, 1 Item, 5: 4 Materials, 1 Item; 5: 4 Materials, 1 Item, 1 Weapon (III); ",,Encounter
+Center of the Universe,,"On the outside of a forest your party finds an abandoned astrological ruin, in the center sits a throne of a once mighty god.  Whom ever sits permanetly loses 5HP but gains 1 Bashing Defense",,Encounter
+Feeding your Demise,,"As your party nears a statue the sun is eclipsed and the world darkens. As you retreat the light returns. The statue reads: ""As the show grows, the Worlds End nears, Feeding me nourishes you."" Place 2 materials on the statue. 1D6: Odd Destroyed, Even: Choose 2 new materials",,Encounter
+Epic Fishing Trip,,"All players stumble upon an abandonded fishing spot, each player rolls a 1D10. 1-9: 1 Random Material, 10: 1 Random Item",,Encounter
+Tribute to Death,,"Deep in the forest resides a decomposing grave. It reads: ""One must sacrifice what they value most to acheive greatness"". Place 3 gold on the gave. 1D10: 1-6: Nothing, 7-10: 1 Random Weapon(III)",,Encounter
+Toll Troll,,"A bridge blocks the parties pass, atop stands a fierce and mighty troll. Each player must pay 1 gold to pass.",,Encounter
+DIstruption in Time,,"Your part comes across a crazed old man mumbling of an ancient treasure. As he speaks his age shifts decades. He offers a drink out of his golden chalice at a price of 3 gold. 1D6: Even Permanent -1 to Combat and Defense Initiative, 6 Odd Permanent +1 to Combat and Defense Initiative",,Encounter
+Life Comes at a Price,,"Moans of minions lead your party to a bloody shrine within a graveyard. Your can hear hundreds of gouls chant ""Goooouuurrrssstt"". A chill rolls through the air and you question hearing ""Powerless and weak, pay or begone"". Receive permanent 1HP per gold payed to the shrine.",,Encounter
+Delapadated Bridge,,"Your party comes across a bridge unabled to be crossed. Each player must discard 1 material to help rebuild the bridge. ""CHHHHAAAOOOOSSSSSSSS""",,

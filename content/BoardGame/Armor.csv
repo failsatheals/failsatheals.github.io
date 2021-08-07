@@ -1,0 +1,7 @@
+Name,Type,Buy,Sell,Damage,Level,Description,Benefit,BackName
+Copper Armor,Plate,0,0,,I,5HP; 1 Melee Bashing Defense,,Armor
+Light Robe,Cloth,0,0,,I,3 Mana,,Armor
+Leather Vest,Leather,0,0,,I,5HP,,Armor
+Steel Armor,Plate,5,2,4 Ore,III,10HP; 1 Melee Bashing Defense,,Armor
+Imbuned Robe,Cloth,5,2,4 Cloth,III,6 Mana; 1 Ranged Bashing Defense,,Armor
+Rugged Vest,Leather,5,2,4 Leather,III,5HP; Lower 1 Combat Initiative ,,Armor
