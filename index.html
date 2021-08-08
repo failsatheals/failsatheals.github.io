@@ -116,13 +116,13 @@
 
 
             <div class="col-1-3">
-                <h3 class="text-center">Card Populator</h3>
+                <h3 class="text-center">Card Text Populator</h3>
                 <a id="cardPopModal" href="#cardPop" class="modal-link">
                     <div class="overlay-container">
                         <div class="overlay">
                             <i class="zmdi zmdi-zoom-in"></i>
                         </div>
-                        <img src="images/boardgame/text_to_card.png" alt="board" />
+                        <img src="images/boardgame/text_to_card_1.png" alt="board" />
                     </div>
                 </a>
             </div>
@@ -375,8 +375,7 @@
             <div class="col-1-1">
                 <h3 class="heading-modal">IOU RPG Script</h3>
                 <p>I created various files using Java, Excel and AutoHotKey to create scripts to do tasks within the
-                    game. To
-                    to accomplish this I used AutoHotKey to find pixel positions/colors of all points of
+                    game. To accomplish this I used AutoHotKey to find pixel positions/colors of all points of
                     interactions within
                     the game. After storing these all into an excel file I wrote a Java script to parse the file and
                     depending
@@ -454,7 +453,7 @@
             <div class="col-1-1">
                 <h3 class="heading-modal">PDF Card Generator</h3>
 
-                <img src="images/boardgame/card_to_pdf_1.png" alt="images" height="506" width="858" />
+                <img src="images/boardgame/card_to_pdf_1.png" alt="images" class="modal-image" />
                 <div class='text-center'>
 
                     <p>I started development of this application to aide in the creation of the playing cards for my
@@ -512,302 +511,318 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="cardPop" class="modal-container">
+        <div class="modal-background close-cardPop modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-cardPop modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
 
-        <div id="cardPop" class="modal-container">
-            <div class="modal-background close-cardPop modal-close"></div>
-            <div class="modal-content grid grid-pad">
-                <div class="close-cardPop modal-close modal-close-main">
-                    <i class="zmdi zmdi-close"></i>
-                </div>
-
-                <div class="col-1-1">
-                    <h3 class="heading-modal">Card Populator</h3>
-                    <img src="images/boardgame/text_to_card.png" alt="images" height="506" width="858"
-                        style="image-orientation: from-image" />
-                    <p>After finishing my PDF Card Generator I realized I still had an issue with populiating the Cards
-                        with appropriate text and images in their required locations. I decided it would be faster for
-                        me to write this program than to edit image files every time I wanted to make a change.</p>
-                    <p>This program requires some basic inputs such as, the Template of the card, a CSV containing the
-                        text to place, and any images to place. Currently all the coordinates and parameters for each
-                        type are apart of its class within the project, future iterations I would like it to be able to
-                        be inputted and dynamic to be used outside my game development.</p>
-                    <p>The application will be able to check and determine if the text size will fit and adjust to fit
-                        within constraints. It will also handle new lines if lines of text handle different lengths.
+            <div class="col-1-1">
+                <h3 class="heading-modal">Card Text Populator</h3>
+                <img src="images/boardgame/text_to_card_1.png" alt="images" class="modal-image"
+                    style="image-orientation: from-image" />
+                <div class="text-center">
+                    <p>Development of this applications stemmed from the creation of PDF Card Generator. I realized if a
+                        card had an incorrect value it was labor intensive to update the text values on the image file.
+                        Instead of having multiple versions of card images with different text values, it would be
+                        easier to write an appliction to populate the text values dynamically onto a card template. </p>
+                    <p>This program leverages using CSV files for a data source of text values, templates of the
+                        different
+                        types of cards, and any supporting images required. The program currently has global coordinates
+                        defined in the code for text locations, in the future I would prefer them to be defined outside
+                        the
+                        application with the text.
+                    </p>
+                    <p>
+                        Depending on the length of text the application can determine if it needs to increase or
+                        decrease
+                        the font size to fit. In certain text fields the application is able to handle run off words and
+                        return the text to a new line.
+                    </p>
+                    <p>
+                        The application takes in a directory of templates and provides an imageview for visual
+                        selecting.
+                        You then need to tell the application which template to use for internally defined coordinates.
+                        The
+                        user then is required to select the CSV file and directory to be used for images.
                     </p>
                     <p> Overall this application has been an amazing time saver to help me recreate cards and fix all my
                         typos on my first prototype run! </p>
-                    </hr>
-                    <p>Armor Template</p>
-                    <img src="images/boardgame/armor_back_1.png" alt="images" />
                     <br>
-                    <hr>
                     <p>CSV Files</p>
-                    <a target="_blank" rel="noopener noreferrer" href="content/boardboardgame/Armor.csv"
-                        class="btn btn-sm" title="View File">Armor CSV</a>
+                    <a target="_blank" rel="noopener noreferrer" href="content/boardgame/Armor.csv" class="btn btn-sm"
+                        title="View File">
+                        Armor CSV
+                    </a>
                     <br>
-                    <a target="_blank" rel="noopener noreferrer" href="content/boardboardgame/Items.csv"
-                        class="btn btn-sm" title="View File">Items CSV</a>
+                    <a target="_blank" rel="noopener noreferrer" href="content/boardgame/Item.csv" class="btn btn-sm"
+                        title="View File">
+                        Items CSV
+                    </a>
                     <br>
-                    <hr>
                     <br>
-
+                    <p>Templates</p>
+                    <img src="images/boardgame/equipment_1.png" alt="images" class="modal-image" />
+                    <img src="images/boardgame/item_4.png" alt="images" class="modal-image" />
+                    <br>
+                    <br>
                     <p>Finished Cards</p>
-                    <img src="images/boardgame/item_1.png" alt="images" />
-                    <img src="images/boardgame/encounter_1.png" alt="images" />
-                    <img src="images/boardgame/weapon_1.png" alt="images" />
-                    <img src="images/boardgame/montster_1.png" alt="images" />
-
-
+                    <img src="images/boardgame/equipment_2.png" alt="images" />
+                    <img src="images/boardgame/item_5.png" alt="images" />
 
                 </div>
+
             </div>
         </div>
+    </div>
 
-        <div id="jeep" class="modal-container">
-            <div class="modal-background close-jeep modal-close"></div>
-            <div class="modal-content grid grid-pad">
-                <div class="close-jeep modal-close modal-close-main">
-                    <i class="zmdi zmdi-close"></i>
+    <div id="jeep" class="modal-container">
+        <div class="modal-background close-jeep modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-jeep modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+
+            <div class="col-1-1">
+                <h3 class="heading-modal">1998 Jeep Grand Cherokee</h3>
+                <img src="images/jeep/exterior_3.png" alt="images" class="modal-image" />
+                <h1 class="text-center"> This is my 1998 Jeep Grand Cherokee 5.9L, "Niner".</h1>
+                <br>
+                <br>
+
+                <div class="text-center">
+                    <h1>Engine </h1>
+                    <p> HPT214XP, 108 LSA, .488/.480</p>
+                    <p>Mopar M1</p>
+                    <p>52MM throttle body</p>
+                    <p>EQ heads</p>
+                    <p>Denso 12 hole injectors 9470229</p>
+                    <p>Harland Sharp 1.7 rockers</p>
+                    <p>Trend pushrods</p>
+                    <p>Doug Thorley Tri-Y headers</p>
+                    <p>Clothes Street Billet timing chain 93503X9 </p>
+                    <p>Scat SCA9012 balancer</p>
+                    <p>MSD coil</p>
+                    <p>Thunderbolt 8.8 spark plug wires</p>
+                    <p>Catch Can with Morimoto large capacity tank</p>
+                    <p>K&N intake tube and filter</p>
+                    <br><br>
+                    <img src="images/jeep/engine_1.png" alt="images" class="modal-image" />
+                    <br><br>
                 </div>
 
-                <div class="col-1-1">
-                    <h3 class="heading-modal">1998 Jeep Grand Cherokee</h3>
-                    <img src="images/jeep/exterior_3.png" alt="images" class="modal-image" />
-                    <h1 class="text-center"> This is my 1998 Jeep Grand Cherokee 5.9L, "Niner".</h1>
+                <div class="text-center">
+                    <h1>Suspension</h1>
+                    <p>H&R Loweing Springs</p>
+                    <p>Bilstein 4600 shock absorbers</p>
+                    <p>No front sway bar</p>
+                    <p>Hellwig rear sway bar</p>
+                    <p>Stock control arms with Prothane bushings</p>
+                    <br><br>
+                </div>
+
+                <div class="text-center">
+                    <h1>Rear Axle</h1>
+                    <p>Ford Explorer 8.8</p>
+                    <p>Ford Racing carbon fiber clutches and s-spring</p>
                     <br>
                     <br>
+                    <h1>Front Axle</h1>
+                    <p>Rebuild Dana 35</p>
+                    <p>Early XJ knuckles</p>
+                    <br><br>
+                    <img src="images/jeep/axle_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
 
-                    <div class="text-center">
-                        <h1>Engine </h1>
-                        <p> HPT214XP, 108 LSA, .488/.480</p>
-                        <p>Mopar M1</p>
-                        <p>52MM throttle body</p>
-                        <p>EQ heads</p>
-                        <p>Denso 12 hole injectors 9470229</p>
-                        <p>Harland Sharp 1.7 rockers</p>
-                        <p>Trend pushrods</p>
-                        <p>Doug Thorley Tri-Y headers</p>
-                        <p>Clothes Street Billet timing chain 93503X9 </p>
-                        <p>Scat SCA9012 balancer</p>
-                        <p>MSD coil</p>
-                        <p>Thunderbolt 8.8 spark plug wires</p>
-                        <p>Catch Can with Morimoto large capacity tank</p>
-                        <p>K&N intake tube and filter</p>
-                        <br><br>
-                        <img src="images/jeep/engine_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
+                <div class="text-center">
+                    <h1>Wheels and Tires</h1>
+                    <p>American Mustang FR500 replicas</p>
+                    <p>255/55/R18 Cooper Discoverer H/T Plus</p>
+                    <br><br>
+                </div>
 
-                    <div class="text-center">
-                        <h1>Suspension</h1>
-                        <p>H&R Loweing Springs</p>
-                        <p>Bilstein 4600 shock absorbers</p>
-                        <p>No front sway bar</p>
-                        <p>Hellwig rear sway bar</p>
-                        <p>Stock control arms with Prothane bushings</p>
-                        <br><br>
-                    </div>
+                <div class="text-center">
+                    <h1>Brakes</h1>
+                    <p>WK2 Brake caliper</p>
+                    <p>2000 SVT Cobra R 13’’ rotor</p>
+                    <p>Raybestos rotors and Element3 pads</p>
+                    <p>Crown Performance front braided brake lines</p>
+                    <p>SSTubes stainless brake line kit</p>
+                    <br>
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://jeepm62superchargerkit.blogspot.com/p/blog-page.html" class="btn btn-sm"
+                        title="View File">Front brake swap guide</a>
+                    <br><br>
+                    <img src="images/jeep/brakes_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
 
-                    <div class="text-center">
-                        <h1>Rear Axle</h1>
-                        <p>Ford Explorer 8.8</p>
-                        <p>Ford Racing carbon fiber clutches and s-spring</p>
-                        <br>
-                        <br>
-                        <h1>Front Axle</h1>
-                        <p>Rebuild Dana 35</p>
-                        <p>Early XJ knuckles</p>
-                        <br><br>
-                        <img src="images/jeep/axle_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
+                <div class="text-center">
+                    <h1>Transmission</h1>
+                    <p>Martin Saine Street/Strip 700</p>
+                    <p>Martin Saine 28s 2800 stall converter</p>
+                    <p>Auxiliery fluid cooler post radiator</p>
+                    <br><br>
+                    <img src="images/jeep/transmission_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
 
-                    <div class="text-center">
-                        <h1>Wheels and Tires</h1>
-                        <p>American Mustang FR500 replicas</p>
-                        <p>255/55/R18 Cooper Discoverer H/T Plus</p>
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Brakes</h1>
-                        <p>WK2 Brake caliper</p>
-                        <p>2000 SVT Cobra R 13’’ rotor</p>
-                        <p>Raybestos rotors and Element3 pads</p>
-                        <p>Crown Performance front braided brake lines</p>
-                        <p>SSTubes stainless brake line kit</p>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://jeepm62superchargerkit.blogspot.com/p/blog-page.html" class="btn btn-sm"
-                            title="View File">Front brake swap guide</a>
-                        <br><br>
-                        <img src="images/jeep/brakes_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Transmission</h1>
-                        <p>Martin Saine Street/Strip 700</p>
-                        <p>Martin Saine 28s 2800 stall converter</p>
-                        <p>Auxiliery fluid cooler post radiator</p>
-                        <br><br>
-                        <img src="images/jeep/transmission_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Electronics</h1>
-                        <p>Blue Sea fuse panel</p>
-                        <p>Joying 6.2’’ Android head unit</p>
-                        <p>Weivision 360 camera</p>
-                        <p>GlowShift dual temp gauges</p>
-                        <p>Coolgear 60W type C 15W type A charger</p>
-                        <p>Voltmeter</p>
-                        <p>Dakota Digital 2800bt electric fan controller</p>
-                        <p>USB Android internal TPMS</p>
-                        <br><br>
-                        <img src="images/jeep/electrical_1.png" alt="images" class="modal-image" />
-                        <br><br>
-
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Audio</h1>
-                        <p>JL xd700/5 amplifier</p>
-                        <p>Alpine Type-R 6.5 Component front speakers</p>
-                        <p>Alpine Type-R 6.5 Coaxial rear speakers</p>
-                        <p>Alpine Type-R 10 DVC 4ohm subwoofer</p>
-                        <p>Q logic subwoofer enclousure</p>
-                        <p>Audio Controller LC7i lineout converter</p>
-                        <br><br>
-                        <img src="images/jeep/electrical_2.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Misc</h1>
-                        <p>Power steering cooler</p>
-                        <p>Ironman 4x4 Fab steering brace</p>
-                        <p>Durango steering box</p>
-                        <p>AEM inline wideband and controller</p>
-                        <p>Seude headliner, soundbar and sun visors </p>
-                        <p>Carbon fiber hydro dipped interior and exterior pieces</p>
-                        <p>WK2 blackedout WK2 badges</p>
-                        <p>Modified WJ cabin filter housing and filter</p>
-                        <br><br>
-                        <img src="images/jeep/misc_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Lighting</h1>
-                        <p>Mini D2S 5.0 projector retrofit35w 5k retrofit </p>
-                        <p>Morimoto 35w 5k HID bulbs</p>
-                        <p>Exterior LED bulbs, front turnsignal switchback with EP39 flasher relay</p>
-                        <p>LED fog light pod</p>
-                        <img src="images/jeep/lighting_1.gif" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-                    <div class="text-center">
-                        <h1>Interior</h1>
-                        <img src="images/jeep/interior_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                        <img src="images/jeep/interior_2.png" alt="images" class="modal-image" />
-                        <br><br>
-                        <img src="images/jeep/interior_3.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-
-
-                    <div class="text-center">
-                        <h1>Exhaust</h1>
-                        <p>3 inch from headers back</p>
-                        <p>Magnaflow high flow catalytic converter</p>
-                        <p>Spintech 5000 Sport Truck muffler</p>
-                        <p>5 inch exhaust tip</p>
-                        <br><br>
-                        <img src="images/jeep/exhaust_1.png" alt="images" class="modal-image" />
-                        <br><br>
-                        <img src="images/jeep/exhaust_2.png" alt="images" class="modal-image" />
-                        <br><br>
-                        <img src="images/jeep/exhaust_3.png" alt="images" class="modal-image" />
-                        <br><br>
-                    </div>
-
-
+                <div class="text-center">
+                    <h1>Electronics</h1>
+                    <p>Blue Sea fuse panel</p>
+                    <p>Joying 6.2’’ Android head unit</p>
+                    <p>Weivision 360 camera</p>
+                    <p>GlowShift dual temp gauges</p>
+                    <p>Coolgear 60W type C 15W type A charger</p>
+                    <p>Voltmeter</p>
+                    <p>Dakota Digital 2800bt electric fan controller</p>
+                    <p>USB Android internal TPMS</p>
+                    <br><br>
+                    <img src="images/jeep/electrical_1.png" alt="images" class="modal-image" />
+                    <br><br>
 
                 </div>
+
+                <div class="text-center">
+                    <h1>Audio</h1>
+                    <p>JL xd700/5 amplifier</p>
+                    <p>Alpine Type-R 6.5 Component front speakers</p>
+                    <p>Alpine Type-R 6.5 Coaxial rear speakers</p>
+                    <p>Alpine Type-R 10 DVC 4ohm subwoofer</p>
+                    <p>Q logic subwoofer enclousure</p>
+                    <p>Audio Controller LC7i lineout converter</p>
+                    <br><br>
+                    <img src="images/jeep/electrical_2.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
+
+                <div class="text-center">
+                    <h1>Misc</h1>
+                    <p>Power steering cooler</p>
+                    <p>Ironman 4x4 Fab steering brace</p>
+                    <p>Durango steering box</p>
+                    <p>AEM inline wideband and controller</p>
+                    <p>Seude headliner, soundbar and sun visors </p>
+                    <p>Carbon fiber hydro dipped interior and exterior pieces</p>
+                    <p>WK2 blackedout WK2 badges</p>
+                    <p>Modified WJ cabin filter housing and filter</p>
+                    <br><br>
+                    <img src="images/jeep/misc_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
+
+                <div class="text-center">
+                    <h1>Lighting</h1>
+                    <p>Mini D2S 5.0 projector retrofit35w 5k retrofit </p>
+                    <p>Morimoto 35w 5k HID bulbs</p>
+                    <p>Exterior LED bulbs, front turnsignal switchback with EP39 flasher relay</p>
+                    <p>LED fog light pod</p>
+                    <img src="images/jeep/lighting_1.gif" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
+
+                <div class="text-center">
+                    <h1>Interior</h1>
+                    <img src="images/jeep/interior_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                    <img src="images/jeep/interior_2.png" alt="images" class="modal-image" />
+                    <br><br>
+                    <img src="images/jeep/interior_3.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
+
+
+
+                <div class="text-center">
+                    <h1>Exhaust</h1>
+                    <p>3 inch from headers back</p>
+                    <p>Magnaflow high flow catalytic converter</p>
+                    <p>Spintech 5000 Sport Truck muffler</p>
+                    <p>5 inch exhaust tip</p>
+                    <br><br>
+                    <img src="images/jeep/exhaust_1.png" alt="images" class="modal-image" />
+                    <br><br>
+                    <img src="images/jeep/exhaust_2.png" alt="images" class="modal-image" />
+                    <br><br>
+                    <img src="images/jeep/exhaust_3.png" alt="images" class="modal-image" />
+                    <br><br>
+                </div>
+
+
+
             </div>
         </div>
+    </div>
 
-        <div id="sifter" class="modal-container">
-            <div class="modal-background close-sifter modal-close"></div>
-            <div class="modal-content grid grid-pad">
-                <div class="close-sifter modal-close modal-close-main">
-                    <i class="zmdi zmdi-close"></i>
-                </div>
+    <div id="sifter" class="modal-container">
+        <div class="modal-background close-sifter modal-close"></div>
+        <div class="modal-content grid grid-pad">
+            <div class="close-sifter modal-close modal-close-main">
+                <i class="zmdi zmdi-close"></i>
+            </div>
 
-                <div class="col-1-1">
-                    <h3 class="heading-modal">Pine Pellet Sifter</h3>
-                    <img src="images/sifter/sifter_2.jpg" alt="images" height="506" width="858" />
-                    <p>
-                        This project stemmed from the dislike of using traditional clay based cat litter; the dust after
-                        after cleaning, refined powder on the ground over time and
-                        the volume of waste it produced. Researching led me to find pine pellets which alleviated the
-                        dislikes of clay litter. There is little to no tracking from the box,
-                        no dust is stirred up in the air, and the used litter is easier to dispose of.
-                    </p>
-                    <p>
-                        After initial use I discovered that the method of sifting used for other traditional litters
-                        would not work effectively for pine pellets. In a traditional sense the
-                        material traveling through the sifter would be retained, with pine pellets that material becomes
-                        disposed. This is due yo the pine pellets breaking down into fines
-                        when they come into contact with a liquid. Finding an efficient method to remove the fines is
-                        the goal to help promote the use of pine pellet litters.
-                    </p>
-                    <p>
-                        In my first attempt I sought out two storage containers that would leave volume between them
-                        when stacked. This volume would allow room for the fines to collect while
-                        sifting. To create holes for the sifting container I used a drill bit with a smaller diameter
-                        than the pellets and attempted to put holes as close together as possible.
-                        I was unable to create as tight of a pattern as I would like due to the plastic fracturing. I
-                        created a cut out on the side in hopes the cats would use the whole set up
-                        as a litter box but they were not fond of getting inside of it. One concern to be addressed is
-                        how much weight can the sifting container hold with more holes.
-                    </p>
-                    <p>
-                        For my second attempt I wanted to address if I could create a more efficient sifting pattern.
-                        One of the findings from my first attempt was that many fines would sit between
-                        holes and with side to side shaking pile up on the edges. For this I decided to put holes on the
-                        side going up about an inch. To create a tighter hole pattern I decided to
-                        make a template with a thin piece of metal that I could then use a soldering iron to puncture
-                        holes without fracturing.
-                    </p>
-                    <p>
-                        I am still in the process of creating all the holes, this turned out to be a much longer process
-                        than I anticipated. The melting plastic is not desirable and very hard to work around.
-                        If i can prove a tighter pattern to be significantly better I will search out methods of CNC
-                        cutting to focus on structural strength.
-                    </p>
+            <div class="col-1-1">
+                <h3 class="heading-modal">Pine Pellet Sifter</h3>
+                <img src="images/sifter/sifter_2.jpg" alt="images" height="506" width="858" />
+                <p>
+                    This project stemmed from the dislike of using traditional clay based cat litter; the dust after
+                    after cleaning, refined powder on the ground over time and
+                    the volume of waste it produced. Researching led me to find pine pellets which alleviated the
+                    dislikes of clay litter. There is little to no tracking from the box,
+                    no dust is stirred up in the air, and the used litter is easier to dispose of.
+                </p>
+                <p>
+                    After initial use I discovered that the method of sifting used for other traditional litters
+                    would not work effectively for pine pellets. In a traditional sense the
+                    material traveling through the sifter would be retained, with pine pellets that material becomes
+                    disposed. This is due yo the pine pellets breaking down into fines
+                    when they come into contact with a liquid. Finding an efficient method to remove the fines is
+                    the goal to help promote the use of pine pellet litters.
+                </p>
+                <p>
+                    In my first attempt I sought out two storage containers that would leave volume between them
+                    when stacked. This volume would allow room for the fines to collect while
+                    sifting. To create holes for the sifting container I used a drill bit with a smaller diameter
+                    than the pellets and attempted to put holes as close together as possible.
+                    I was unable to create as tight of a pattern as I would like due to the plastic fracturing. I
+                    created a cut out on the side in hopes the cats would use the whole set up
+                    as a litter box but they were not fond of getting inside of it. One concern to be addressed is
+                    how much weight can the sifting container hold with more holes.
+                </p>
+                <p>
+                    For my second attempt I wanted to address if I could create a more efficient sifting pattern.
+                    One of the findings from my first attempt was that many fines would sit between
+                    holes and with side to side shaking pile up on the edges. For this I decided to put holes on the
+                    side going up about an inch. To create a tighter hole pattern I decided to
+                    make a template with a thin piece of metal that I could then use a soldering iron to puncture
+                    holes without fracturing.
+                </p>
+                <p>
+                    I am still in the process of creating all the holes, this turned out to be a much longer process
+                    than I anticipated. The melting plastic is not desirable and very hard to work around.
+                    If i can prove a tighter pattern to be significantly better I will search out methods of CNC
+                    cutting to focus on structural strength.
+                </p>
 
-                    <p>Containers</p>
-                    <img src="images/sifter/container_1.jpg" alt="images" />
-                    <img src="images/sifter/container_2.jpg" alt="images" />
-                    <img src="images/sifter/lid_1.png" alt="images" />
+                <p>Containers</p>
+                <img src="images/sifter/container_1.jpg" alt="images" class="modal-image" />
+                <img src="images/sifter/container_2.jpg" alt="images" class="modal-image" />
+                <img src="images/sifter/lid_1.png" alt="images" class="modal-image" />
 
-                    <p>Templpate</p>
-                    <img src="images/sifter/template_1.png" alt="images" />
-                    <img src="images/sifter/template_2.png" alt="images" />
+                <p>Templpate</p>
+                <img src="images/sifter/template_1.png" alt="images" class="modal-image" />
+                <img src="images/sifter/template_2.png" alt="images" class="modal-image" />
 
-                    <p>Setup</p>
-                    <img src="images/sifter/setup_1.jpg" alt="images" />
-                    <img src="images/sifter/test_1.png" alt="images" />
+                <p>Setup</p>
+                <img src="images/sifter/setup_1.jpg" alt="images" class="modal-image" />
+                <img src="images/sifter/test_1.png" alt="images" class="modal-image" />
 
-                </div>
             </div>
         </div>
+    </div>
 
 
 
