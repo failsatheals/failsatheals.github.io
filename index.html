@@ -374,63 +374,57 @@
 
             <div class="col-1-1">
                 <h3 class="heading-modal">IOU RPG Script</h3>
-                <p>I created various files using Java, Excel and AutoHotKey to create scripts to do tasks within the
-                    game. To accomplish this I used AutoHotKey to find pixel positions/colors of all points of
-                    interactions within
-                    the game. After storing these all into an excel file I wrote a Java script to parse the file and
-                    depending
-                    on the presence of a pixel color, write to a file containing AutoHotKey functions. With the
-                    resulting
-                    files I could easily copy comma\\nds in desired order to a new AutoHotKey script to build
+                <p>I created scripts using Java, Excel and AutoHotKey to do tasks within the game Idle Online Universe.
+                    To accomplish this I used AutoHotKey to find pixel positions and colors of all points of
+                    interactions for different asks. After storing these all into an excel file I wrote a Java program
+                    to parse the file and
+                    depending on the presence of a pixel color, write to a file containing AutoHotKey functions. With
+                    the
+                    resulting files I could easily copy commands in desired order to a new AutoHotKey script to build
                     complex actions.</p>
 
-                <p>For me specifically this allowed me to play 6 accounts at once and with binded keystrokes execute
-                    diverse
-                    tasks across all accounts. Using functionally of AutoHotKey I was able to write conditions to
-                    track windows
-                    open and start an early state identification within the game itself.</p>
+                <p>For me specifically this allowed me to play 6 accounts at once and using keybindings in AHK to
+                    execute
+                    diverse tasks across all accounts. Using functionally of AutoHotKey I was able to write conditions
+                    to
+                    track in game window and start an early state identification system.</p>
 
-                <p>IdleFunctionsIndividual.ahk contains individual lines for each function. Using this in
-                    combination with one
-                    another will build complex tasks to be performed by AutoHotKey.</p>
+                <p>IdleFunctionsIndividual.ahk contains individual lines for each function. Using these in
+                    combination with one another will build complex tasks to be performed by AutoHotKey.</p>
 
                 <p>IdleFunctions_Java.ahk contains the actual functions, these functions need to be present in your
-                    FINAL .ahk
-                    file to be ran. The commands from the previous file can be copied within this file for specific
-                    bindings
-                    to create your own custom scripts.</p>
+                    FINAL .ahk file to be ran. The commands from the previous file can be copied within this file for
+                    specific
+                    bindings to create your own custom scripts.</p>
 
-                <p>IdleFunctions.ahk is a file I have started to construct and test various tasks. Online 2957 you
-                    will notice
-                    a command HoldEnter, this takes a number of times 'enter' will be held pressed as input. This
-                    can be
-                    used for Mining and Woodcutting with ease. Line 2972 is what I personally used to switch between
-                    my different
-                    browsers/windows. This configuration is designed with 1080 resolution, first 10 windows being
-                    the game,
-                    and one unopened quick launch preceding.</p>
+                <p>IdleFunctions.ahk is a file I have started to construct and test various tasks. On line 2957 you
+                    will notice a command HoldEnter, this takes a number of times 'enter' will be held 'pressed' as
+                    input. This
+                    can be used for Mining and Woodcutting with ease. Line 2972 is what I used to switch between
+                    my different browsers/windows. This configuration is designed with 1080 resolution, first 10 windows
+                    being
+                    the game.</p>
 
                 <p>The input parameters x and y are the pixel coordinates of the top left corner of the game in your
-                    browser at
-                    100% zoom.</p>
+                    browser at 100% zoom.
+                </p>
                 <p>Speed will determine the time between each click, this can be easily adjusted for your lag and
                     ping.
+                </p>
                 <p>Pixel will be defined by the line of code above the command, this will be predetermined from the
-                    excel
-                    file. The function will check the color for position passed in and compared to what it should
-                    be.</p>
-                <p>Functions with the menu parameter are my work in progress; these accept a "true" assuming the
-                    menu is
-                    present and checks if there is or isn't based on various pixel locations unique to it.</p>
-                <p>My current main task is on line 2747, here you can see my declare my speed, x, y and set my
-                    CoordMode.
-                    It currently loops through each window and uses GAME_CHECK to see if the menu is on menu
-                    selection
-                    or wave change, then changes to menu selection. </p>
-                <p>Please be aware to add esc::ExitApp to the end of your script. </p>
-
-
-
+                    excel file. The function will check the color for position passed in and compared to what it should
+                    be.
+                </p>
+                <p>Functions with the menu parameter are my work in progress, these accept a "true" assuming the
+                    menu is present and checks if it exists based on various pixel locations unique to it.
+                </p>
+                <p>My current main task is on line 2747, here you can see me declare my speed, x, y and set my
+                    CoordMode. It currently loops through each window and uses GAME_CHECK to see if the menu is on menu
+                    selection or wave change, then changes to menu selection.
+                </p>
+                <p>
+                    Please be aware to add esc::ExitApp to the end of your script.
+                </p>
 
                 <a target="_blank" rel="noopener noreferrer" href="content/idle/IdleFunctionsIndividual.txt"
                     class="btn btn-lg" title="View File">IdleFunctionsIndivual.Ahk</a>
