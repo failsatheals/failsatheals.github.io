@@ -1,7 +1,12 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
 body {
   font-size: 20px;
 
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Comfortaa";
 
   color: #334;
 
@@ -399,7 +404,7 @@ a:hover {
 
   margin-top: 15px;
 
-  font-family: "Roboto";
+  font-family: "Comfortaa";
 
   font-weight: 400;
 
