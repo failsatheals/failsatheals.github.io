@@ -1402,7 +1402,6 @@
 
                 fetch("//api.giphy.com/v1/gifs/random?api_key=CW27AW0nlp5u0&username=carlburton").then(res => res.json())
                     .then(response => {
-                        console.log(response)
                         $('#gif').css('background-image', 'url(' + response.data.embed_url + ')')
                         interval = setInterval(static, 7000);
                     })
